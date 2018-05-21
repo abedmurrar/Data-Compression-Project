@@ -9,7 +9,7 @@ lzw.writebytes('compressed.lzw', compressed)
 ratio = os.stat('uncompressed.txt').st_size/float(os.stat('compressed.lzw').st_size)
 print "Compression Ratio : " ,ratio
 
-os.system("python adaptive-arithmetic-compress.py uncompressed.txt compressed.bin")
+os.system("python ./arithmetic/adaptive-arithmetic-compress.py uncompressed.txt compressed.bin")
 ratio2 = os.stat('uncompressed.txt').st_size/float(os.stat('compressed.bin').st_size)
 print "Adaptive Arithmetic coding"
 print "Compression Ratio : " ,ratio2
