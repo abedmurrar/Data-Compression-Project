@@ -22,3 +22,6 @@
 
 ## Results
 * Results are viewed on command line that shows compression ratio for each algorithm for the same file
+```sql
+select count(*) from static_pages_thread
+```
